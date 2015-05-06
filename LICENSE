@@ -1,33 +1,3 @@
-# OutOf
-
-Pulls data out of HTML and XML.
-
-## Synopsis
-
-```js
-var structure = require('outof');
-
-// Declare the structure:
-var info_object = {
-  foo: '/stuff/@foo',
-  bar: structure.text('//bar'),
-  lot: structure.int('//bar/@lot'),
-  exp: structure.float('//bar/@exp'),
-  when: structure.moment('/stuff/@when', 'YYYY-MM-DD HH:mm:ss', 'Etc/UTC')
-};
-
-// Parse and pull out the structure in one of three ways:
-var info = structure(info_object).outOf.xml(content);
-var info = structure(info_object).outOf.html(content);
-var info = structure(info_object).outOf(document.root());
-
-// You can do lists too:
-var foo_list = structure.list('//foo', structure.int('@id'));
-var foo_ids = structure(foo_list).outOf(root);
-```
-
-## License
-
 The MIT License (MIT)
 
 Copyright (c) 2014 Xig Katalyst

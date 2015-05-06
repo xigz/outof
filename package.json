@@ -1,0 +1,33 @@
+{
+  "name": "outof",
+  "version": "0.0.1",
+  "description": "Pulls data out of HTML and XML",
+  "author": "Xig Katalyst <xig.katalyst@gmail.com> (https://twitter.com/xigkatalyst)",
+  "license": "MIT",
+  "engines": {
+    "node": "^0.10",
+    "iojs": "^1",
+    "npm": "^2.7"
+  },
+  "dependencies": {
+    "libxmljs": "^0.14.0",
+    "moment": "^2.10.2",
+    "moment-timezone": "^0.3.1",
+    "ramda": "^0.13.0"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.4",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0"
+  },
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xigz/outof.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xigz/outof/issues",
+    "email": "xig.katalyst@gmail.com"
+  }
+}
